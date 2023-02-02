@@ -12,7 +12,7 @@ fun playerName (): Player {
 }
 
 fun cpu(): Player {
-    var name = listOf("Dieter", "Jens", "Klaus", "Hans-Georg", "Jan-Friedrich", "Reinfried", "Hans", "Sepp")
+    var name = listOf("Dieter", "Jens", "Klaus", "Hans-Georg", "Jan-Friedrich", "Reinfried", "Hans", "Sepp", "Gunther", "Günther", "Sybille", "Kassandra")
     return Player(name.random())
 }
 
