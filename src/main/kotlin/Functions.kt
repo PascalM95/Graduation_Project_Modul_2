@@ -1,3 +1,10 @@
+fun introduction () {
+    var names = players()
+    println("\nHerzlich Willkommen meine Damen und Herren in der großartigen Arena von Unterschnaxling.")
+    println("Heute stehen sich im Finale der Pokémon-Weltmeisterschaft die beiden Meister-Trainer ${names[0]} und ${names[1]} gegenüber.")
+    println("Let's get ready to Rumble!!!\n")
+}
+
 fun playerName (): Player {
     val getName = readln()
     var name = Player(getName)
@@ -23,14 +30,14 @@ fun players (): List<String> {
                 1 -> {
                     println("Spieler 2: Gib bitte deinen Namen ein:")
                     var player2 = playerName()
-                    println("${player1.name}, du spielst gegen ${player2.name}. Let's go!")
+                    println("${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
                     rightInput = false
                     pvp = listOf(player1.name, player2.name)
                 }
 
                 2 -> {
                     var computer = cpu()
-                    println("${player1.name}, du spielst gegen ${computer.name}. Let's go!")
+                    println("${player1.name}, du kämpfst gegen ${computer.name}. Let's go!")
                     rightInput = false
                     pvp = listOf(player1.name, computer.name)
                 }
