@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Attack.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Electro.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Fire.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Normal.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Plant.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Poison.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Water.kt" afterDir="false" />
+    <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="01.02.23: Day1">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ListOfAttacks.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ListOfPokemons.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Attack.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Attack.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -47,18 +35,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,11 +60,24 @@
       <workItem from="1675243551311" duration="787000" />
       <workItem from="1675245345719" duration="597000" />
       <workItem from="1675247200098" duration="10641000" />
-      <workItem from="1675268125485" duration="1137000" />
+      <workItem from="1675268125485" duration="1207000" />
+      <workItem from="1675329603475" duration="6520000" />
     </task>
+    <task id="LOCAL-00001" summary="01.02.23: Day1">
+      <created>1675269815257</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675269815257</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="01.02.23: Day1" />
+    <option name="LAST_COMMIT_MESSAGE" value="01.02.23: Day1" />
   </component>
 </project>
