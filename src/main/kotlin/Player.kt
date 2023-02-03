@@ -30,8 +30,5 @@ class Player (val name: String, val cpu: Boolean) {
             listOfPokemon.removeAll(pokemonOfPlayer)
             println("$name, du hast ${pokemonOfPlayer[0].name}, ${pokemonOfPlayer[1].name}, ${pokemonOfPlayer[2].name} und ${pokemonOfPlayer[3].name} gewählt.\n")
         }
-
-
-
     }
 }
