@@ -28,6 +28,6 @@ val rettan = Poison("Rettan", 61.0, 41.0, 31.0, 30, giftstachel, biss, saeure, e
 val nidoran = Poison("Nidoran", 67.0, 39.0, 29.0, 30, kratzer, doppelkick, biss, giftstachel)
 val smogon = Poison("Smogon", 64.0, 44.0, 62.0, 30, tackle, smog, schlammbad, gewissheit)
 
-val listOfPokemon =
+var listOfPokemon =
     mutableListOf<Pokemon>(rattfratz, evoli, relaxo, endivie, geckarbor, tuska, glumanda, panflam, fynx, schiggy,
                            plinfa, karnimani, pikachu, elekid, voltobal, rettan, nidoran, smogon)

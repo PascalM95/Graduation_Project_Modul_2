@@ -15,6 +15,8 @@ fun logo () {
 
 fun gameOn () {
     var names = players()
+    names[0].choosePokemon(names[0])
+    names[1].choosePokemon(names[1])
     println("\nHerzlich Willkommen meine Damen und Herren in der großartigen Arena von Unterschnaxling.")
     println("Heute stehen sich im Finale der Pokémon-Weltmeisterschaft die beiden Meister-Trainer ${names[0].name} und ${names[1].name} gegenüber.")
     println("Let's get ready to Rumble!!!\n")
@@ -26,7 +28,7 @@ fun playerName (): Player {
     return name
 }
 
-fun cpu(): Player {
+fun computer(): Player {
     var name = listOf("Dieter", "Jens", "Klaus", "Hans-Georg", "Jan-Friedrich", "Reinfried", "Hans", "Sepp", "Gunther", "Günther", "Sybille", "Kassandra")
     return Player(name.random(), true)
 }
@@ -50,7 +52,7 @@ fun players (): List<Player> {
                     pvp = listOf(player1, player2)
                 }
                 2 -> {
-                    var player2 = cpu()
+                    var player2 = computer()
                     println("${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
                     rightInput = true
                     pvp = listOf(player1, player2)
