@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="01.02.23: Day2">
+    <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="03.02.23: Day3">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/TEst.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ListOfPokemons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ListOfPokemons.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -60,6 +63,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="TEstKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TEstKt" />
+      <module name="Graduation_Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.TEstKt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,7 +92,8 @@
       <workItem from="1675268125485" duration="1207000" />
       <workItem from="1675329603475" duration="7193000" />
       <workItem from="1675339882014" duration="43000" />
-      <workItem from="1675339963611" duration="9125000" />
+      <workItem from="1675339963611" duration="10502000" />
+      <workItem from="1675415553434" duration="3397000" />
     </task>
     <task id="LOCAL-00001" summary="01.02.23: Day1">
       <created>1675269815257</created>
@@ -98,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675348557217</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="01.02.23: Day2">
+      <created>1675349333632</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675349333632</updated>
+    </task>
+    <task id="LOCAL-00005" summary="01.02.23: Day2">
+      <created>1675349436946</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675349436946</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="01.02.23: Day1" />
     <MESSAGE value="01.02.23: Day2" />
-    <option name="LAST_COMMIT_MESSAGE" value="01.02.23: Day2" />
+    <MESSAGE value="03.02.23: Day3" />
+    <option name="LAST_COMMIT_MESSAGE" value="03.02.23: Day3" />
   </component>
 </project>

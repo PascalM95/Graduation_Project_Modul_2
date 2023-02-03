@@ -1,5 +1,21 @@
-fun introduction () {
+fun logo () {
+    println("                                  ,'\\\n" +
+            "    _.----.        ____         ,'  _\\   ___    ___     ____\n" +
+            "_,-'       `.     |    |  /`.   \\,-'    |   \\  /   |   |    \\  |`.\n" +
+            "\\      __    \\    '-.  | /   `.  ___    |    \\/    |   '-.   \\ |  |\n" +
+            " \\.    \\ \\   |  __  |  |/    ,','_  `.  |          | __  |    \\|  |\n" +
+            "   \\    \\/   /,' _`.|      ,' / / / /   |          ,' _`.|     |  |\n" +
+            "    \\     ,-'/  /   \\    ,'   | \\/ / ,`.|         /  /   \\  |     |\n" +
+            "     \\    \\ |   \\_/  |   `-.  \\    `'  /|  |    ||   \\_/  | |\\    |\n" +
+            "      \\    \\ \\      /       `-.`.___,-' |  |\\  /| \\      /  | |   |\n" +
+            "       \\    \\ `.__,'|  |`-._    `|      |__| \\/ |  `.__,'|  | |   |\n" +
+            "        \\_.-'       |__|    `-._ |              '-.|     '-.| |   |\n" +
+            "                                `'                            '-._|")
+}
+
+fun gameOn () {
     var names = players()
+    var pokemons = choosePokemon(names[0])
     println("\nHerzlich Willkommen meine Damen und Herren in der großartigen Arena von Unterschnaxling.")
     println("Heute stehen sich im Finale der Pokémon-Weltmeisterschaft die beiden Meister-Trainer ${names[0]} und ${names[1]} gegenüber.")
     println("Let's get ready to Rumble!!!\n")
@@ -23,7 +39,7 @@ fun players (): List<String> {
     var pvp = listOf<String>()
 
     do {
-        var rightInput = true
+        var rightInput = false
         try {
             var input = readln().toInt()
             when (input) {
@@ -31,24 +47,64 @@ fun players (): List<String> {
                     println("Spieler 2: Gib bitte deinen Namen ein:")
                     var player2 = playerName()
                     println("${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
-                    rightInput = false
+                    rightInput = true
                     pvp = listOf(player1.name, player2.name)
                 }
 
                 2 -> {
                     var computer = cpu()
                     println("${player1.name}, du kämpfst gegen ${computer.name}. Let's go!")
-                    rightInput = false
+                    rightInput = true
                     pvp = listOf(player1.name, computer.name)
                 }
             }
         } catch (ex: NumberFormatException) {
             println("Falsche Eingabe! Gib eine 1 oder eine 2 ein.")
         }
-    } while (rightInput)
+    } while (!rightInput)
 
     return pvp
 }
+
+fun choosePokemon (name1: String) {
+    var pokemonOfPlayer1 = mutableListOf<Pokemon>()
+
+
+    println("\nNun müsst ihr eure Mitstreiter wählen. Ihr könnt aus diesen Pokémon aussuchen:\n")
+    var i = 1
+    for (pokemon in listOfPokemon) {
+        println("$i - ${pokemon.name}   KP: ${pokemon.kp}")
+        Thread.sleep(100)
+        i++
+    }
+
+    println("\n$name1, du fängst an zu wählen.")
+    var j = 1
+    while (j < 5) {
+        println("Wähle dein $j. Pokémon:")
+        var input = readln().toInt()-1
+        pokemonOfPlayer1.add(listOfPokemon[input])
+        j++
+    }
+    listOfPokemon.removeAll(pokemonOfPlayer1)
+    println("$name1, du hast ${pokemonOfPlayer1[0].name}, ${pokemonOfPlayer1[1].name}, ${pokemonOfPlayer1[2].name} und ${pokemonOfPlayer1[3].name} gewählt.\n")
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 fun damage (pokemon1: Pokemon, pokemon2: Pokemon): Double {
     var z = (0..15).random().toDouble()

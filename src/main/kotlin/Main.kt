@@ -1,3 +1,4 @@
 fun main() {
-    introduction()
+    logo()
+    gameOn()
 }
