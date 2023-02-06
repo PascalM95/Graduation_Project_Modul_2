@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="03.02.23: Day3">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Damage.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Attack.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Attack.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Electro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Electro.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Fire.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Fire.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ListOfAttacks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ListOfAttacks.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ListOfPokemons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ListOfPokemons.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Normal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Normal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Plant.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Plant.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Poison.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Poison.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Damage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Damage.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/TEst.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TEst.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Water.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Water.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,20 +48,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TEstKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TEstKt" />
@@ -103,7 +92,8 @@
       <workItem from="1675329603475" duration="7193000" />
       <workItem from="1675339882014" duration="43000" />
       <workItem from="1675339963611" duration="10502000" />
-      <workItem from="1675415553434" duration="17154000" />
+      <workItem from="1675415553434" duration="17872000" />
+      <workItem from="1675673190707" duration="3573000" />
     </task>
     <task id="LOCAL-00001" summary="01.02.23: Day1">
       <created>1675269815257</created>
@@ -161,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675423708356</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="03.02.23: Day3">
+      <created>1675433889999</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675433889999</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

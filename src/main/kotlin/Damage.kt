@@ -1,9 +1,8 @@
-import kotlin.math.round
 import kotlin.math.roundToInt
 
 fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
-    var z = (0..15).random().toDouble()
-    var damage = ((pokemon1.lvl * 0.4 + 2.0) * attack.damage.toDouble() * (pokemon1.kp.toDouble() / (50.0 * pokemon2.def.toDouble())) * 1.5 + 2.0) * volltreffer() * (z / 100.0) * 2
+    var z = 100 - ((0..15).random().toDouble())
+    var damage = ((pokemon1.lvl * 0.4 + 2.0) * attack.damage.toDouble() * (pokemon1.kp.toDouble() / (50.0 * pokemon2.def.toDouble())) + 2.0) * volltreffer() * (z / 100.0)
 
     if (attack.type == "Pflanze" && (pokemon2.type == "Pflanze" || pokemon2.type == "Wasser" || pokemon2.type == "Elektro")) {
         damage *= 0.5
@@ -101,7 +100,7 @@ fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
 }
 
 fun volltreffer (): Double {
-    val vollTreffer = listOf(true, false)
+    val vollTreffer = listOf(false, true, false, false, false, false)
     return if (vollTreffer.random()) {
         2.0
     } else {
