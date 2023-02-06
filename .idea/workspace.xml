@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="06.02.23: Day4">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Item.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ListOfItems.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Damage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Damage.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Player.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/TEst.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TEst.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +93,7 @@
       <workItem from="1675339882014" duration="43000" />
       <workItem from="1675339963611" duration="10502000" />
       <workItem from="1675415553434" duration="17872000" />
-      <workItem from="1675673190707" duration="7447000" />
+      <workItem from="1675673190707" duration="10415000" />
     </task>
     <task id="LOCAL-00001" summary="01.02.23: Day1">
       <created>1675269815257</created>
@@ -169,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675677071161</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="06.02.23: Day4">
+      <created>1675680714294</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675680714294</updated>
+    </task>
+    <task id="LOCAL-00012" summary="06.02.23: Day4">
+      <created>1675680872935</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675680872935</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
