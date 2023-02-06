@@ -70,7 +70,6 @@ fun players (): List<Player> {
 
 fun gameRound (name1: Player, name2: Player, pokemons1: MutableList<Pokemon>, pokemons2: MutableList<Pokemon>) {
     var i = 1
-    println("\nRunde $i:\n\n")
     println("${name1.name}, welches Pokémon willst du zuerst in den Ring schicken?\n1 - ${pokemons1[0].name}\n2 - ${pokemons1[1].name}\n3 - ${pokemons1[2].name}\n4 - ${pokemons1[3].name}")
     var input = readln().toInt()
     when (input) {
@@ -80,6 +79,7 @@ fun gameRound (name1: Player, name2: Player, pokemons1: MutableList<Pokemon>, po
         4 -> println("${pokemons1[3].name} du bist dran!")
         else -> println("Falsche Eingabe! Versuche es noch einmal.")
     }
+    println("\nRunde $i:\n\n")
 }
 fun death (pokemon: Pokemon): Boolean {
    return if (pokemon.kp <= 0) {
