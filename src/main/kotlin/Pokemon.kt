@@ -39,34 +39,6 @@ open class Pokemon(
         } catch (ex: NumberFormatException) {
             println("Falsche Eingabe! Gib eine ganze Zahl zwischen 1 und 4 ein.")
         }
-
-//        var input = readln().toInt()
-//        return when (input) {
-//            1 -> {
-//                println("${pokemon.name} setzt ${pokemon.attack1.name} ein.")
-//                pokemon.attack1
-//            }
-//
-//            2 -> {
-//                println("${pokemon.name} setzt ${pokemon.attack2.name} ein.")
-//                pokemon.attack2
-//            }
-//
-//            3 -> {
-//                println("${pokemon.name} setzt ${pokemon.attack3.name} ein.")
-//                pokemon.attack3
-//            }
-//
-//            4 -> {
-//                println("${pokemon.name} setzt ${pokemon.attack4.name} ein.")
-//                pokemon.attack4
-//            }
-//
-//            else -> {
-//                println("Falsche Eingabe! Versuche es nochmal.")
-//                chooseAttack(pokemon)
-//            }
-//        }
         return pokemon.chooseAttack(pokemon)
     }
 }

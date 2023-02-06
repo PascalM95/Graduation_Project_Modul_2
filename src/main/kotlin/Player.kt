@@ -9,7 +9,6 @@ class Player (val name: String, val cpu: Boolean) {
             Thread.sleep(200)
             i++
         }
-
         if (!player.cpu) {
             var j = 0
             while (j < 4) {
@@ -32,4 +31,5 @@ class Player (val name: String, val cpu: Boolean) {
         }
         return pokemonOfPlayer
     }
+
 }

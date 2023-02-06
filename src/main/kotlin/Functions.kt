@@ -21,7 +21,6 @@ fun gameOn () {
     println("Heute stehen sich im Finale der Pokémon-Weltmeisterschaft die beiden Meister-Trainer ${names[0].name} und ${names[1].name} gegenüber.")
     println("Let's get ready to Rumble!!!\n")
     Thread.sleep(2000)
-    battle(names[0], names[1], names[0].pokemonOfPlayer, names[1].pokemonOfPlayer)
 }
 
 fun playerName (): Player {
@@ -68,40 +67,20 @@ fun players (): List<Player> {
     return pvp
 }
 
-fun battle (name1: Player, name2: Player, pokemons1: MutableList<Pokemon>, pokemons2: MutableList<Pokemon>) {
-    println("${name1.name}, welches Pokémon willst du in den Ring schicken?\n1 - ${pokemons1[0].name}\n2 - ${pokemons1[1].name}\n3 - ${pokemons1[2].name}\n4 - ${pokemons1[3].name}")
-    var input = readln().toInt()
-    try {
-        when (input) {
-            1 -> println("${pokemons1[0].name} du bist dran!")
-            2 -> println("${pokemons1[1].name} du bist dran!")
-            3 -> println("${pokemons1[2].name} du bist dran!")
-            4 -> println("${pokemons1[3].name} du bist dran!")
-            else -> println("Falsche Eingabe! Versuche es noch einmal.")
-        }
-    } catch (ex: NumberFormatException) {
-        println("Gib eine Zahl von 1 bis 4 ein!")
-    }
-    if (name2.cpu) {
-        var chosenPokemon = pokemons2.random()
-        println("${name2.name} setzt ${chosenPokemon.name} ein.")
-    } else {
-        println("${name2.name}, welches Pokémon willst du in den Ring schicken?\n1 - ${pokemons2[0].name}\n2 - ${pokemons2[1].name}\n3 - ${pokemons2[2].name}\n4 - ${pokemons2[3].name}")
-        var input2 = readln().toInt()
-        try {
-            when (input2) {
-                1 -> println("${pokemons2[0].name} du bist dran!")
-                2 -> println("${pokemons2[1].name} du bist dran!")
-                3 -> println("${pokemons2[2].name} du bist dran!")
-                4 -> println("${pokemons2[3].name} du bist dran!")
-                else -> println("Falsche Eingabe! Versuche es noch einmal.")
-            }
-        } catch (ex: NumberFormatException) {
-            println("Gib eine Zahl von 1 bis 4 ein!")
-        }
-    }
 
+
+fun attack (pokemon1: Pokemon, pokemon2: Pokemon): Pokemon {
+    var attack = pokemon1.chooseAttack(pokemon1)
+    var damage = damage(pokemon1, pokemon2, attack)
+    pokemon2.kp -= damage
+    if (pokemon2.kp <= 0) {
+        pokemon2.kp = 0
+    }
+    println("${pokemon2.name} hat noch ${pokemon2.kp}KP verbleibend.")
+    if (death(pokemon2)) {}
+    return pokemon2
 }
+
 fun death (pokemon: Pokemon): Boolean {
    return if (pokemon.kp <= 0) {
         println("${pokemon.name} wurde besiegt!")
@@ -110,7 +89,3 @@ fun death (pokemon: Pokemon): Boolean {
         false
     }
 }
-
-
-
-

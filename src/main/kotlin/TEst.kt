@@ -5,6 +5,11 @@ fun main () {
     var player2 = Player("Sepp", true)
 
 //    pokemon1.chooseAttack(pokemon1)
-    battle(player1, player2, pokemon1, pokemon2)
+//    var pokemon = pokemonForFight(player1, pokemon1)
+//    println(pokemon.name)
+    do (attack(pokemon1[0], pokemon2[0]))
+        while (pokemon2[0].kp > 0)
+
+
 
 }
