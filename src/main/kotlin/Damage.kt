@@ -92,10 +92,6 @@ fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
         damage *= 2
         println("✈️✈️✈️ Das war sehr effektiv! ✈️✈️✈️")
     }
-
-
-
-
     return damage.roundToInt()
 }
 
