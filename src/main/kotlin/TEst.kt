@@ -7,8 +7,11 @@ fun main () {
 //    pokemon1.chooseAttack(pokemon1)
 //    var pokemon = pokemonForFight(player1, pokemon1)
 //    println(pokemon.name)
-    do (attack(pokemon1[0], pokemon2[0]))
-        while (pokemon2[0].kp > 0)
+//    do (attack(pokemon1[0], pokemon2[0]))
+//        while (pokemon2[0].kp > 0)
+    var game1 = Game(player1, player2, pokemon1, pokemon2)
+    game1.pokemonForFight(player1, pokemon1)
+
 
 
 

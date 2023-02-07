@@ -82,15 +82,9 @@ fun attack (pokemon1: Pokemon, pokemon2: Pokemon): Pokemon {
         pokemon2.kp = 0
     }
     println("${pokemon2.name} hat noch ${pokemon2.kp}KP verbleibend.")
-    if (death(pokemon2)) {}
+    if (pokemon2.death()) {
+        println("$pokemon2 wurde besiegt!")
+    }
     return pokemon2
 }
 
-fun death (pokemon: Pokemon): Boolean {
-   return if (pokemon.kp <= 0) {
-        println("${pokemon.name} wurde besiegt!")
-       true
-    } else {
-        false
-    }
-}
