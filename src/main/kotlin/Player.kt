@@ -21,9 +21,11 @@ class Player (val name: String, val cpu: Boolean) {
                 var input = readln().toInt() - 1
                 pokemonOfPlayer.add(listOfPokemon[input])
                 j++
+                Thread.sleep(100)
             }
             listOfPokemon.removeAll(pokemonOfPlayer)
             println("\n${this.name}, du hast ${pokemonOfPlayer[0].name}, ${pokemonOfPlayer[1].name}, ${pokemonOfPlayer[2].name} und ${pokemonOfPlayer[3].name} gewählt.\n")
+            Thread.sleep(400)
         }
         if (this.cpu) {
             var j = 0
@@ -34,6 +36,7 @@ class Player (val name: String, val cpu: Boolean) {
             }
             listOfPokemon.removeAll(pokemonOfPlayer)
             println("\n${this.name}, du hast ${pokemonOfPlayer[0].name}, ${pokemonOfPlayer[1].name}, ${pokemonOfPlayer[2].name} und ${pokemonOfPlayer[3].name} gewählt.\n")
+            Thread.sleep(400)
         }
         return pokemonOfPlayer
     }
@@ -44,11 +47,14 @@ class Player (val name: String, val cpu: Boolean) {
             if (this.cpu) {
                 chosenPokemon = pokemons.random()
                 println("${this.name} setzt ${chosenPokemon.name} ein.\n")
+                Thread.sleep(100)
             } else {
                 if (pokemons.size <= 3 ) {
                     println("${this.name}, welches Pokémon willst du als nächstes in den Ring schicken?\n")
+                    Thread.sleep(100)
                 } else {
                     println("${this.name}, welches Pokémon willst du in den Ring schicken?\n")
+                    Thread.sleep(100)
                 }
                 var i = 1
                 for (pokemon in pokemons) {
@@ -59,6 +65,7 @@ class Player (val name: String, val cpu: Boolean) {
                     var input = readln().toInt()
                     println("${pokemons[input-1].name} du bist dran!\n")
                     chosenPokemon = pokemons[input-1]
+                    Thread.sleep(500)
                 } catch (ex: Exception) {
                     println("Gib eine Zahl von 1 bis 4 ein!\n")
                 }

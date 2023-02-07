@@ -6,23 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="07.02.23: Day5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Damage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Damage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Electro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Electro.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Fire.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Fire.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Game.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Item.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ListOfAttacks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ListOfAttacks.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ListOfItems.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ListOfPokemons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon/ListOfPokemons.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Normal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Normal.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Plant.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Plant.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Poison.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Poison.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Pokemon.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TEst.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TEst.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Water.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Water.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TEst.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +103,7 @@
       <workItem from="1675339963611" duration="10502000" />
       <workItem from="1675415553434" duration="17872000" />
       <workItem from="1675673190707" duration="21030000" />
-      <workItem from="1675761141125" duration="16624000" />
+      <workItem from="1675761141125" duration="17376000" />
     </task>
     <task id="LOCAL-00001" summary="01.02.23: Day1">
       <created>1675269815257</created>
@@ -238,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675770681137</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="07.02.23: Day5">
+      <created>1675781210292</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675781210292</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>

@@ -88,11 +88,11 @@ fun players(): List<Player> {
         var rightInput = false
         try {
             var input = readln().toInt()
-            Thread.sleep(1000)
             when (input) {
                 1 -> {
                     println("\nSpieler 2: Gib bitte deinen Namen ein:")
                     var player2 = playerName()
+                    Thread.sleep(500)
                     println("\n${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
                     rightInput = true
                     pvp = listOf(player1, player2)
