@@ -1,6 +1,8 @@
+import Pokemon.Pokemon
+import Pokemon.listOfPokemon
+
 class Player (val name: String, val cpu: Boolean) {
     var pokemonOfPlayer = mutableListOf<Pokemon>()
-    val itemBeutel = mutableListOf<Item>(trank, topTrank, hyperTrank, beerenSaft)
 
     fun choosePokemon (): MutableList<Pokemon> {
         Thread.sleep(500)
@@ -34,5 +36,34 @@ class Player (val name: String, val cpu: Boolean) {
             println("\n${this.name}, du hast ${pokemonOfPlayer[0].name}, ${pokemonOfPlayer[1].name}, ${pokemonOfPlayer[2].name} und ${pokemonOfPlayer[3].name} gewählt.\n")
         }
         return pokemonOfPlayer
+    }
+
+    fun pokemonForFight(pokemons: MutableList<Pokemon>): Pokemon {
+        var chosenPokemon: Pokemon? = null
+        while (chosenPokemon == null) {
+            if (this.cpu) {
+                chosenPokemon = pokemons.random()
+                println("${this.name} setzt ${chosenPokemon.name} ein.\n")
+            } else {
+                if (pokemons.size <= 3 ) {
+                    println("${this.name}, welches Pokémon willst du als nächstes in den Ring schicken?\n")
+                } else {
+                    println("${this.name}, welches Pokémon willst du in den Ring schicken?\n")
+                }
+                var i = 1
+                for (pokemon in pokemons) {
+                    println("$i - ${pokemon.name} ${pokemon.kp} KP")
+                    i++
+                }
+                try {
+                    var input = readln().toInt()
+                    println("${pokemons[input-1].name} du bist dran!\n")
+                    chosenPokemon = pokemons[input-1]
+                } catch (ex: Exception) {
+                    println("Gib eine Zahl von 1 bis 4 ein!\n")
+                }
+            }
+        }
+        return chosenPokemon
     }
 }

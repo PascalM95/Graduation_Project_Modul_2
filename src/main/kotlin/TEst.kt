@@ -1,3 +1,5 @@
+import Pokemon.*
+
 fun main () {
     var pokemon1 = mutableListOf(relaxo, glumanda, pikachu, evoli)
     var pokemon2 = mutableListOf(schiggy, rattfratz, smogon, panflam)

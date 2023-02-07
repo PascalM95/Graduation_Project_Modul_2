@@ -1,9 +1,13 @@
+package Pokemon
+
+import Attack
+
 class Normal (name: String,
               kp: Int,
               att: Int,
               def: Int,
               lvl: Int,
               attacks: List<Attack>,
-              type: String = "Normal"): Pokemon (name, kp, att, def, lvl, attacks, type) {
+              type: String = "Pokemon.Normal"): Pokemon(name, kp, att, def, lvl, attacks, type) {
 
               }

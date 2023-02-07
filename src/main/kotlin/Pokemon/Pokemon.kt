@@ -1,3 +1,7 @@
+package Pokemon
+import Attack
+import Player
+
 open class Pokemon(
     val name: String,
     var kp: Int,
@@ -12,7 +16,7 @@ open class Pokemon(
         while (chosenAttack == null) {
             if (player.cpu) {
                 chosenAttack = this.attacks.random()
-                println("${this.name} setzt ${chosenAttack.name} ein.")
+                println("${this.name} setzt ${chosenAttack.name} ein.\n")
             } else {
                 println("\nWähle eine Attacke aus:")
                 var i = 1
@@ -35,5 +39,4 @@ open class Pokemon(
     fun death (): Boolean {
         return this.kp <= 0
     }
-
 }

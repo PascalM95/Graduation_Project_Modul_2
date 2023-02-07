@@ -1,3 +1,4 @@
+import Pokemon.Pokemon
 import kotlin.math.roundToInt
 
 fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
@@ -52,7 +53,7 @@ fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
         damage *= 2
         println("❄️❄️❄️ Das war nicht sehr effektiv! ❄️❄️❄️")
     }
-    if (attack.type == "Geist" && pokemon2.type == "Normal") {
+    if (attack.type == "Geist" && pokemon2.type == "Pokemon.Normal") {
         damage *= 0
         println("Diese Attacke ist wirkungslos!")
     }
@@ -68,7 +69,7 @@ fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
         damage *= 0
         println("Diese Attacke ist wirkungslos!")
     }
-    if (attack.type == "Stahl" && (pokemon2.type == "Normal" || pokemon2.type == "Pflanze")) {
+    if (attack.type == "Stahl" && (pokemon2.type == "Pokemon.Normal" || pokemon2.type == "Pflanze")) {
         damage *= 0.5
         println("⚓️ Das war nicht sehr effektiv! ⚓️")
     }
@@ -76,7 +77,7 @@ fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
         damage *= 2
         println("⚓️⚓️⚓️ Das war sehr effektiv! ⚓️⚓️⚓️")
     }
-    if (attack.type == "Gestein" && (pokemon2.type == "Normal" || pokemon2.type == "Feuer")) {
+    if (attack.type == "Gestein" && (pokemon2.type == "Pokemon.Normal" || pokemon2.type == "Feuer")) {
         damage *= 0.5
         println("🪨 Das war nicht sehr effektiv! 🪨")
     }

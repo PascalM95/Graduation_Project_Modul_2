@@ -1,3 +1,42 @@
+import Pokemon.Pokemon
+fun gameOn() {
+    logo()
+    Thread.sleep(3000)
+    var names = players()
+    val player1 = names[0]
+    val player2 = names[1]
+    var pokemonPlayer1 = player1.choosePokemon()
+    var pokemonPlayer2 = player2.choosePokemon()
+    println("\n\nHerzlich Willkommen meine Damen und Herren in der großartigen Arena von Unterschnaxling.")
+    println("Heute stehen sich im Finale der Pokémon-Weltmeisterschaft die beiden Meister-Trainer ${names[0].name} und ${names[1].name} gegenüber.")
+    println("Let's get ready to Rumble!!!\n")
+    Thread.sleep(2000)
+    var pokemonPlayer = player1.pokemonForFight(pokemonPlayer1)
+    var pokemonOpponent = player2.pokemonForFight(pokemonPlayer2)
+    do {
+        attack(player1, pokemonPlayer, pokemonOpponent)
+        if (pokemonOpponent.death()) {
+            pokemonPlayer2.remove(pokemonOpponent)
+            if (pokemonPlayer2.size > 0) {
+                pokemonOpponent = player2.pokemonForFight(pokemonPlayer2)
+            } else {
+                println("\nHerzlichen Glückwunsch, ${player1.name}! Du hast gewonnen!\nDu darfst jetzt mit Stolz den Titel \"Pokémon-Weltmeister\" tragen!")
+                break
+            }
+        }
+        attack(player2, pokemonOpponent, pokemonPlayer)
+        if (pokemonPlayer.death()) {
+            pokemonPlayer1.remove(pokemonPlayer)
+            if (pokemonPlayer1.size > 0) {
+                pokemonPlayer = player1.pokemonForFight(pokemonPlayer1)
+            } else {
+                println("\nHerzlichen Glückwunsch, ${player2.name}! Du hast gewonnen!\nDu darfst jetzt mit Stolz den Titel \"Pokémon-Weltmeister\" tragen!")
+                break
+            }
+        }
+    } while (!(pokemonPlayer.death()) || !(pokemonOpponent.death()))
+}
+
 fun logo() {
     println(
         "                                  ,'\\\n" +
@@ -13,29 +52,6 @@ fun logo() {
                 "        \\_.-'       |__|    `-._ |              '-.|     '-.| |   |\n" +
                 "                                `'                            '-._|\n\n"
     )
-}
-
-fun gameOn() {
-    var names = players()
-    val player1 = names[0]
-    val player2 = names[1]
-    val pokemonPlayer1 = player1.choosePokemon()
-    val pokemonPlayer2 = player2.choosePokemon()
-    println("\n\nHerzlich Willkommen meine Damen und Herren in der großartigen Arena von Unterschnaxling.")
-    println("Heute stehen sich im Finale der Pokémon-Weltmeisterschaft die beiden Meister-Trainer ${names[0].name} und ${names[1].name} gegenüber.")
-    println("Let's get ready to Rumble!!!\n")
-    Thread.sleep(2000)
-    val round1 = Game(player1, player2, pokemonPlayer1, pokemonPlayer2)
-    val firstPokemonPlayer = round1.pokemonForFight(player1, pokemonPlayer1)
-    val firstPokemonOpponent = round1.pokemonForFight(player2, pokemonPlayer2)
-    attack(player1, firstPokemonPlayer, firstPokemonOpponent)
-    attack(player2, firstPokemonOpponent, firstPokemonPlayer)
-    attack(player1, firstPokemonPlayer, firstPokemonOpponent)
-    attack(player2, firstPokemonOpponent, firstPokemonPlayer)
-    attack(player1, firstPokemonPlayer, firstPokemonOpponent)
-    attack(player2, firstPokemonOpponent, firstPokemonPlayer)
-
-
 }
 
 fun playerName(): Player {
@@ -63,9 +79,9 @@ fun computer(): Player {
 }
 
 fun players(): List<Player> {
-    println("Spieler 1: Gib bitte deinen Namen ein:")
+    println("\nSpieler 1: Gib bitte deinen Namen ein:")
     var player1 = playerName()
-    println("${player1.name}, willst du gegen einen anderen Spieler oder gegen den Computer spielen?\n1 - Spieler\n2 - Computer")
+    println("\n${player1.name}, willst du gegen einen anderen Spieler oder gegen den Computer spielen?\n1 - Spieler\n2 - Computer")
     var pvp = listOf<Player>()
 
     do {
@@ -75,23 +91,23 @@ fun players(): List<Player> {
             Thread.sleep(1000)
             when (input) {
                 1 -> {
-                    println("Spieler 2: Gib bitte deinen Namen ein:")
+                    println("\nSpieler 2: Gib bitte deinen Namen ein:")
                     var player2 = playerName()
-                    println("${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
+                    println("\n${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
                     rightInput = true
                     pvp = listOf(player1, player2)
                 }
 
                 2 -> {
                     var player2 = computer()
-                    println("${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
+                    println("\n${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
                     Thread.sleep(500)
                     rightInput = true
                     pvp = listOf(player1, player2)
                 }
             }
         } catch (ex: NumberFormatException) {
-            println("Falsche Eingabe! Gib eine 1 oder eine 2 ein.")
+            println("\nFalsche Eingabe! Gib eine 1 oder eine 2 ein.")
         }
     } while (!rightInput)
 
@@ -105,11 +121,9 @@ fun attack(player: Player, pokemon1: Pokemon, pokemon2: Pokemon): Pokemon {
     if (pokemon2.death()) {
         pokemon2.kp = 0
         println("${pokemon2.name} hat noch ${pokemon2.kp}KP verbleibend.")
-        println("${pokemon2.name} wurde besiegt!")
+        println("${pokemon2.name} wurde besiegt!\n")
     } else {
-        println("${pokemon2.name} hat noch ${pokemon2.kp}KP verbleibend.")
+        println("${pokemon2.name} hat noch ${pokemon2.kp}KP verbleibend.\n")
     }
-
     return pokemon2
 }
-
