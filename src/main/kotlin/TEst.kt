@@ -4,13 +4,17 @@ fun main () {
     var player1 = Player("Pascal", false)
     var player2 = Player("Sepp", true)
 
-//    pokemon1.chooseAttack(pokemon1)
-//    var pokemon = pokemonForFight(player1, pokemon1)
-//    println(pokemon.name)
-//    do (attack(pokemon1[0], pokemon2[0]))
-//        while (pokemon2[0].kp > 0)
-    var game1 = Game(player1, player2, pokemon1, pokemon2)
-    game1.pokemonForFight(player1, pokemon1)
+    do {
+        attack(player1, pokemon1[1], pokemon2[0])
+        if (pokemon2[0].death()) {
+            break
+        }
+        attack(player2, pokemon2[0], pokemon1[1])
+        if (pokemon1[1].death()) {
+            break
+        }
+    } while (!(pokemon2[0].death()) || !(pokemon1[0].death()))
+
 
 
 

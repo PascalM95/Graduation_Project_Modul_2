@@ -8,7 +8,7 @@ class Game(
         var chosenPokemon: Pokemon? = null
         while (chosenPokemon == null) {
             if (player.cpu) {
-                var chosenPokemon = pokemons.random()
+                chosenPokemon = pokemons.random()
                 println("${player.name} setzt ${chosenPokemon.name} ein.")
             } else {
                 println("${player.name}, welches Pokémon willst du in den Ring schicken?\n")
@@ -28,5 +28,4 @@ class Game(
         }
         return chosenPokemon
     }
-
 }

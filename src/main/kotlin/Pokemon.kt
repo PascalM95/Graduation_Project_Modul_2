@@ -4,42 +4,32 @@ open class Pokemon(
     var att: Int,
     var def: Int,
     var lvl: Int,
-    var attack1: Attack,
-    var attack2: Attack,
-    var attack3: Attack,
-    var attack4: Attack,
+    var attacks : List<Attack>,
     val type: String) {
 
-    fun chooseAttack (): Attack {
-        println("\nWähle eine Attacke aus:\n1 - ${this.attack1.name} ${this.attack1.damage}\n2 - ${this.attack2.name} ${this.attack2.damage}\n3 - ${this.attack3.name} ${this.attack3.damage}\n4 - ${this.attack4.name} ${this.attack4.damage}\n")
-        try {
-            var input = readln().toInt()
-            return when (input) {
-                1 -> {
-                    println("${this.name} setzt ${this.attack1.name} ein.")
-                    this.attack1
+    fun chooseAttack (player: Player): Attack {
+        var chosenAttack: Attack? = null
+        while (chosenAttack == null) {
+            if (player.cpu) {
+                chosenAttack = this.attacks.random()
+                println("${this.name} setzt ${chosenAttack.name} ein.")
+            } else {
+                println("\nWähle eine Attacke aus:")
+                var i = 1
+                for (attack in attacks) {
+                    println("$i - ${attack.name}")
+                    i++
                 }
-                2 -> {
-                    println("${this.name} setzt ${this.attack2.name} ein.")
-                    this.attack2
-                }
-                3 -> {
-                    println("${this.name} setzt ${this.attack3.name} ein.")
-                    this.attack3
-                }
-                4 -> {
-                    println("${this.name} setzt ${this.attack4.name} ein.")
-                    this.attack4
-                }
-                else -> {
-                    println("Falsche Eingabe! Versuche es nochmal.")
-                    chooseAttack()
+                try {
+                    var input = readln().toInt()
+                    println("${this.name} setzt ${attacks[input-1].name} ein.\n")
+                    chosenAttack = attacks[input-1]
+                } catch (ex: Exception) {
+                    println("Gib eine Zahl von 1 bis 4 ein!")
                 }
             }
-        } catch (ex: NumberFormatException) {
-            println("Falsche Eingabe! Gib eine ganze Zahl zwischen 1 und 4 ein.")
         }
-        return this.chooseAttack()
+        return chosenAttack
     }
 
     fun death (): Boolean {
