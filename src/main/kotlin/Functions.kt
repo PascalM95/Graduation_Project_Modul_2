@@ -15,12 +15,19 @@ fun logo () {
 
 fun gameOn () {
     var names = players()
-    names[0].choosePokemon(names[0])
-    names[1].choosePokemon(names[1])
+    val player1 = names[0]
+    val player2 = names[1]
+    val pokemonPlayer1 = player1.choosePokemon(names[0])
+    val pokemonPlayer2 = player2.choosePokemon(names[1])
     println("\n\nHerzlich Willkommen meine Damen und Herren in der großartigen Arena von Unterschnaxling.")
     println("Heute stehen sich im Finale der Pokémon-Weltmeisterschaft die beiden Meister-Trainer ${names[0].name} und ${names[1].name} gegenüber.")
     println("Let's get ready to Rumble!!!\n")
     Thread.sleep(2000)
+    val round1 = Game(player1, player2, pokemonPlayer1, pokemonPlayer2)
+    round1.pokemonForFight(player1, pokemonPlayer1)
+    round1.pokemonForFight(player2, pokemonPlayer2)
+
+
 }
 
 fun playerName (): Player {
@@ -66,8 +73,6 @@ fun players (): List<Player> {
 
     return pvp
 }
-
-
 
 fun attack (pokemon1: Pokemon, pokemon2: Pokemon): Pokemon {
     var attack = pokemon1.chooseAttack(pokemon1)

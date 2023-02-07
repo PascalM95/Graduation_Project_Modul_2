@@ -31,5 +31,4 @@ class Player (val name: String, val cpu: Boolean) {
         }
         return pokemonOfPlayer
     }
-
 }
