@@ -7,7 +7,7 @@ class Player (val name: String, val cpu: Boolean) {
     fun choosePokemon (): MutableList<Pokemon> {
         Thread.sleep(500)
         println("\n${this.name}, nun musst du deine Mitstreiter wählen. Du kannst aus diesen Pokémon aussuchen:\n")
-        Thread.sleep(300)
+        Thread.sleep(500)
         var i = 1
         for (pokemon in listOfPokemon) {
             println("$i - ${pokemon.name}   KP: ${pokemon.kp}")

@@ -20,7 +20,7 @@ fun gameOn() {
             if (pokemonPlayer2.size > 0) {
                 pokemonOpponent = player2.pokemonForFight(pokemonPlayer2)
             } else {
-                println("\nHerzlichen Glückwunsch, ${player1.name}! Du hast gewonnen!\nDu darfst jetzt mit Stolz den Titel \"Pokémon-Weltmeister\" tragen!")
+                println("\n🎉🎉🎉 Herzlichen Glückwunsch, ${player1.name}! Du hast gewonnen! 🎉🎉🎉\nDu darfst jetzt mit Stolz den Titel \"Pokémon-Weltmeister\" tragen!")
                 break
             }
         }
@@ -30,7 +30,7 @@ fun gameOn() {
             if (pokemonPlayer1.size > 0) {
                 pokemonPlayer = player1.pokemonForFight(pokemonPlayer1)
             } else {
-                println("\nGame Over, ${player1.name}! ${player2.name} hat gewonnen!")
+                println("\n☠️ Game Over, ${player1.name}! ☠️\n${player2.name} hat gewonnen!")
                 break
             }
         }
@@ -92,8 +92,9 @@ fun players(): List<Player> {
                 1 -> {
                     println("\nSpieler 2: Gib bitte deinen Namen ein:")
                     var player2 = playerName()
-                    Thread.sleep(1000)
+                    Thread.sleep(500)
                     println("\n${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
+                    Thread.sleep(1000)
                     rightInput = true
                     pvp = listOf(player1, player2)
                 }
@@ -121,9 +122,12 @@ fun attack(player: Player, pokemon1: Pokemon, pokemon2: Pokemon): Pokemon {
     if (pokemon2.death()) {
         pokemon2.kp = 0
         println("${pokemon2.name} hat noch ${pokemon2.kp}KP verbleibend.")
+        Thread.sleep(200)
         println("${pokemon2.name} wurde besiegt!\n")
+        Thread.sleep(600)
     } else {
         println("${pokemon2.name} hat noch ${pokemon2.kp}KP verbleibend.\n")
+        Thread.sleep(600)
     }
     return pokemon2
 }
