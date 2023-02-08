@@ -20,6 +20,7 @@ fun gameOn() {
             if (pokemonPlayer2.size > 0) {
                 pokemonOpponent = player2.pokemonForFight(pokemonPlayer2)
             } else {
+                println("\n☠️ Game Over, ${player2.name}! ☠️\n")
                 println("\n🎉🎉🎉 Herzlichen Glückwunsch, ${player1.name}! Du hast gewonnen! 🎉🎉🎉\nDu darfst jetzt mit Stolz den Titel \"Pokémon-Weltmeister\" tragen!")
                 break
             }
@@ -30,7 +31,8 @@ fun gameOn() {
             if (pokemonPlayer1.size > 0) {
                 pokemonPlayer = player1.pokemonForFight(pokemonPlayer1)
             } else {
-                println("\n☠️ Game Over, ${player1.name}! ☠️\n${player2.name} hat gewonnen!")
+                println("\n☠️ Game Over, ${player1.name}! ☠️\n")
+                println("\n🎉🎉🎉 Herzlichen Glückwunsch, ${player2.name}! Du hast gewonnen! 🎉🎉🎉\nDu darfst jetzt mit Stolz den Titel \"Pokémon-Weltmeister\" tragen!")
                 break
             }
         }
