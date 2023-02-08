@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="08.02.23: Day6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,7 @@
       <workItem from="1675415553434" duration="17872000" />
       <workItem from="1675673190707" duration="21030000" />
       <workItem from="1675761141125" duration="18497000" />
-      <workItem from="1675849008619" duration="2626000" />
+      <workItem from="1675849008619" duration="3006000" />
     </task>
     <task id="LOCAL-00001" summary="01.02.23: Day1">
       <created>1675269815257</created>
@@ -265,7 +264,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675850816807</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="08.02.23: Day6">
+      <created>1675851659898</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1675851659898</updated>
+    </task>
+    <task id="LOCAL-00025" summary="08.02.23: Day6">
+      <created>1675851884019</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1675851884020</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
