@@ -23,7 +23,7 @@ fun gameOn() {
                 println("\n☠️ Game Over, ${player2.name}! ☠️\n")
                 Thread.sleep(500)
                 println("\n🎉🎉🎉 Herzlichen Glückwunsch, ${player1.name}! Du hast gewonnen! 🎉🎉🎉\nDu darfst jetzt mit Stolz den Titel \"Pokémon-Weltmeister\" tragen!\n")
-                Thread.sleep(1000)
+                Thread.sleep(2000)
                 println("\nHiermit verabschieden wir uns aus der Arena von Unterschnaxling.\nWir wünschen allen eine gute Heimreise und noch einen schönen Abend.")
                 break
             }
@@ -37,7 +37,7 @@ fun gameOn() {
                 println("\n☠️ Game Over, ${player1.name}! ☠️\n")
                 Thread.sleep(500)
                 println("\n🎉🎉🎉 Herzlichen Glückwunsch, ${player2.name}! Du hast gewonnen! 🎉🎉🎉\nDu darfst jetzt mit Stolz den Titel \"Pokémon-Weltmeister\" tragen!\n")
-                Thread.sleep(1000)
+                Thread.sleep(2000)
                 println("\nHiermit verabschieden wir uns aus der Arena von Unterschnaxling.\nWir wünschen allen eine gute Heimreise und noch einen schönen Abend.")
                 break
             }
