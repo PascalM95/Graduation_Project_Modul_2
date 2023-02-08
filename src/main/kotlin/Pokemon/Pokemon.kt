@@ -17,6 +17,7 @@ open class Pokemon(
             if (player.cpu) {
                 chosenAttack = this.attacks.random()
                 println("${this.name} setzt ${chosenAttack.name} ein.\n")
+                Thread.sleep(500)
             } else {
                 println("\nWähle eine Attacke aus:")
                 var i = 1
@@ -28,6 +29,7 @@ open class Pokemon(
                     var input = readln().toInt()
                     println("${this.name} setzt ${attacks[input-1].name} ein.\n")
                     chosenAttack = attacks[input-1]
+                    Thread.sleep(500)
                 } catch (ex: Exception) {
                     println("Gib eine Zahl von 1 bis 4 ein!")
                 }

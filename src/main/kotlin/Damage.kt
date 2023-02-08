@@ -7,91 +7,113 @@ fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
 
     if (attack.type == "Pflanze" && (pokemon2.type == "Pflanze" || pokemon2.type == "Wasser" || pokemon2.type == "Elektro")) {
         damage *= 0.5
-        println("🌱 Das war nicht sehr effektiv! 🌱")
+        println("🌱 Das war nicht sehr effektiv! 🌱\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Pflanze" && (pokemon2.type == "Feuer" || pokemon2.type == "Gift")) {
         damage *= 2
-        println("🌱🌱🌱 Das war sehr effektiv! 🌱🌱🌱")
+        println("🌱🌱🌱 Das war sehr effektiv! 🌱🌱🌱\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Feuer" && (pokemon2.type == "Pflanze" || pokemon2.type == "Feuer")) {
         damage *= 0.5
-        println("🔥 Das war nicht sehr effektiv! 🔥")
+        println("🔥 Das war nicht sehr effektiv! 🔥\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Feuer" && (pokemon2.type == "Wasser")) {
         damage *= 2
-        println("🔥🔥🔥 Das war sehr effektiv! 🔥🔥🔥")
+        println("🔥🔥🔥 Das war sehr effektiv! 🔥🔥🔥\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Wasser" && (pokemon2.type == "Feuer" || pokemon2.type == "Wasser")) {
         damage *= 0.5
-        println("🌊 Das war nicht sehr effektiv! 🌊")
+        println("🌊 Das war nicht sehr effektiv! 🌊\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Wasser" && (pokemon2.type == "Pflanze" || pokemon2.type == "Elektro")) {
         damage *= 2
-        println("🌊🌊🌊 Das war sehr effektiv! 🌊🌊🌊")
+        println("🌊🌊🌊 Das war sehr effektiv! 🌊🌊🌊\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Elektro" && pokemon2.type == "Elektro") {
         damage *= 0.5
-        println("⚡️ Das war nicht sehr effektiv! ⚡️")
+        println("⚡️ Das war nicht sehr effektiv! ⚡️\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Gift" && (pokemon2.type == "Pflanze" || pokemon2.type == "Gift")) {
         damage *= 0.5
-        println("☣️ Das war nicht sehr effektiv! ☣️")
+        println("☣️ Das war nicht sehr effektiv! ☣️\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Boden" && pokemon2.type == "Elektro") {
         damage *= 0
-        println("Diese Attacke ist wirkungslos!")
+        println("Diese Attacke ist wirkungslos!\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Boden" && pokemon2.type == "Gift") {
         damage *= 0.5
-        println("🪨 Das war nicht sehr effektiv! 🪨")
+        println("🪨 Das war nicht sehr effektiv! 🪨\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Boden" && (pokemon2.type == "Pflanze" || pokemon2.type == "Wasser")) {
         damage *= 2
-        println("🪨🪨🪨 Das war sehr effektiv! 🪨🪨🪨")
+        println("🪨🪨🪨 Das war sehr effektiv! 🪨🪨🪨\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Eis" && pokemon2.type == "Feuer") {
         damage *= 2
-        println("❄️❄️❄️ Das war nicht sehr effektiv! ❄️❄️❄️")
+        println("❄️❄️❄️ Das war nicht sehr effektiv! ❄️❄️❄️\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Geist" && pokemon2.type == "Pokemon.Normal") {
         damage *= 0
-        println("Diese Attacke ist wirkungslos!")
+        println("Diese Attacke ist wirkungslos!\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Geist" && pokemon2.type == "Gift") {
         damage *= 0.5
-        println("👻 Das war nicht sehr effektiv! 👻")
+        println("👻 Das war nicht sehr effektiv! 👻\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Drache" && (pokemon2.type == "Pflanze" || pokemon2.type == "Feuer" || pokemon2.type == "Wasser" || pokemon2.type == "Elektro")) {
         damage *= 0.5
-        println("🐲 Das war nicht sehr effektiv! 🐲")
+        println("🐲 Das war nicht sehr effektiv! 🐲\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Stahl" && pokemon2.type == "Gift") {
         damage *= 0
-        println("Diese Attacke ist wirkungslos!")
+        println("Diese Attacke ist wirkungslos!\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Stahl" && (pokemon2.type == "Pokemon.Normal" || pokemon2.type == "Pflanze")) {
         damage *= 0.5
-        println("⚓️ Das war nicht sehr effektiv! ⚓️")
+        println("⚓️ Das war nicht sehr effektiv! ⚓️\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Stahl" && pokemon2.type == "Feuer") {
         damage *= 2
-        println("⚓️⚓️⚓️ Das war sehr effektiv! ⚓️⚓️⚓️")
+        println("⚓️⚓️⚓️ Das war sehr effektiv! ⚓️⚓️⚓️\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Gestein" && (pokemon2.type == "Pokemon.Normal" || pokemon2.type == "Feuer")) {
         damage *= 0.5
-        println("🪨 Das war nicht sehr effektiv! 🪨")
+        println("🪨 Das war nicht sehr effektiv! 🪨\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Gestein" && (pokemon2.type == "Pflanze" || pokemon2.type == "Wasser")) {
         damage *= 2
-        println("🪨🪨🪨 Das war sehr effektiv! 🪨🪨🪨")
+        println("🪨🪨🪨 Das war sehr effektiv! 🪨🪨🪨\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Flug" && pokemon2.type == "Pflanze") {
         damage *= 0.5
-        println("✈️ Das war nicht sehr effektiv! ✈️")
+        println("✈️ Das war nicht sehr effektiv! ✈️\n")
+        Thread.sleep(500)
     }
     if (attack.type == "Flug" && pokemon2.type == "Elektrik") {
         damage *= 2
-        println("✈️✈️✈️ Das war sehr effektiv! ✈️✈️✈️")
+        println("✈️✈️✈️ Das war sehr effektiv! ✈️✈️✈️\n")
+        Thread.sleep(500)
     }
     return damage.roundToInt()
 }

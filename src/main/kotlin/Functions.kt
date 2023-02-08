@@ -92,7 +92,7 @@ fun players(): List<Player> {
                 1 -> {
                     println("\nSpieler 2: Gib bitte deinen Namen ein:")
                     var player2 = playerName()
-                    Thread.sleep(500)
+                    Thread.sleep(1000)
                     println("\n${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
                     rightInput = true
                     pvp = listOf(player1, player2)
@@ -101,7 +101,7 @@ fun players(): List<Player> {
                 2 -> {
                     var player2 = computer()
                     println("\n${player1.name}, du kämpfst gegen ${player2.name}. Let's go!")
-                    Thread.sleep(500)
+                    Thread.sleep(1000)
                     rightInput = true
                     pvp = listOf(player1, player2)
                 }
