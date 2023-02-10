@@ -19,10 +19,10 @@ open class Pokemon(
                 println("${this.name} setzt ${chosenAttack.name} ein.\n")
                 Thread.sleep(500)
             } else {
-                println("\nWähle eine Attacke aus:")
+                println("\n${player.name}, wähle eine Attacke aus:")
                 var i = 1
                 for (attack in attacks) {
-                    println("$i - ${attack.name}")
+                    println("$i - ${attack.name} ${attack.damage}")
                     i++
                 }
                 try {

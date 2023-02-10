@@ -51,14 +51,15 @@ class Player (val name: String, val cpu: Boolean) {
             } else {
                 if (pokemons.size <= 3 ) {
                     println("${this.name}, welches Pokémon willst du als nächstes in den Ring schicken?\n")
-                    Thread.sleep(100)
+                    Thread.sleep(300)
                 } else {
-                    println("${this.name}, welches Pokémon willst du in den Ring schicken?\n")
-                    Thread.sleep(100)
+                    println("${this.name}, welches Pokémon willst du als erstes in den Ring schicken?\n")
+                    Thread.sleep(300)
                 }
                 var i = 1
                 for (pokemon in pokemons) {
                     println("$i - ${pokemon.name} ${pokemon.kp} KP")
+                    Thread.sleep(300)
                     i++
                 }
                 try {

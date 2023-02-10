@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="08.02.23: Day6">
+    <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="10.02.23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Player.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Pokemon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Pokemon.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +59,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
     "vue.rearranger.settings.migration": "true"
   }
@@ -68,7 +74,14 @@
       <recent name="Pokemon" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.MainKt">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Graduation_Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TEstKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TEstKt" />
       <module name="Graduation_Project" />
@@ -78,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.TEstKt" />
       </list>
     </recent_temporary>
@@ -105,6 +119,7 @@
       <workItem from="1675858254870" duration="1892000" />
       <workItem from="1675867725017" duration="927000" />
       <workItem from="1675930464327" duration="2032000" />
+      <workItem from="1676020672522" duration="2539000" />
     </task>
     <task id="LOCAL-00001" summary="01.02.23: Day1">
       <created>1675269815257</created>
@@ -302,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675852285085</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="10.02.23">
+      <created>1676020978740</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1676020978741</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
@@ -316,7 +338,8 @@
     <MESSAGE value="06.02.23: Day4" />
     <MESSAGE value="07.02.23: Day5" />
     <MESSAGE value="08.02.23: Day6" />
-    <option name="LAST_COMMIT_MESSAGE" value="08.02.23: Day6" />
+    <MESSAGE value="10.02.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.02.23" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -8,9 +8,11 @@ fun gameOn() {
     var pokemonPlayer1 = player1.choosePokemon()
     var pokemonPlayer2 = player2.choosePokemon()
     println("\n\nHerzlich Willkommen meine Damen und Herren in der großartigen Arena von Unterschnaxling.")
+    Thread.sleep(800)
     println("Heute stehen sich im Finale der Pokémon-Weltmeisterschaft die beiden Meister-Trainer ${names[0].name} und ${names[1].name} gegenüber.")
+    Thread.sleep(800)
     println("Let's get ready to Rumble!!!\n")
-    Thread.sleep(2000)
+    Thread.sleep(3000)
     var pokemonPlayer = player1.pokemonForFight(pokemonPlayer1)
     var pokemonOpponent = player2.pokemonForFight(pokemonPlayer2)
     do {
@@ -21,7 +23,7 @@ fun gameOn() {
                 pokemonOpponent = player2.pokemonForFight(pokemonPlayer2)
             } else {
                 println("\n☠️ Game Over, ${player2.name}! ☠️\n")
-                Thread.sleep(500)
+                Thread.sleep(1000)
                 println("\n🎉🎉🎉 Herzlichen Glückwunsch, ${player1.name}! Du hast gewonnen! 🎉🎉🎉\nDu darfst jetzt mit Stolz den Titel \"Pokémon-Weltmeister\" tragen!\n")
                 Thread.sleep(2000)
                 println("\nHiermit verabschieden wir uns aus der Arena von Unterschnaxling.\nWir wünschen allen eine gute Heimreise und noch einen schönen Abend.")
