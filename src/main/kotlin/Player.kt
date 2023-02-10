@@ -11,7 +11,7 @@ class Player (val name: String, val cpu: Boolean) {
         var i = 1
         for (pokemon in listOfPokemon) {
             println("$i - ${pokemon.name}   KP: ${pokemon.kp}")
-            Thread.sleep(200)
+            Thread.sleep(300)
             i++
         }
         if (!this.cpu) {

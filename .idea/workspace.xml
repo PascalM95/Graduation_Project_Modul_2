@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="08.02.23: Day6">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +46,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/Pokemon" />
@@ -101,7 +101,10 @@
       <workItem from="1675415553434" duration="17872000" />
       <workItem from="1675673190707" duration="21030000" />
       <workItem from="1675761141125" duration="18497000" />
-      <workItem from="1675849008619" duration="3006000" />
+      <workItem from="1675849008619" duration="4561000" />
+      <workItem from="1675858254870" duration="1892000" />
+      <workItem from="1675867725017" duration="927000" />
+      <workItem from="1675930464327" duration="2032000" />
     </task>
     <task id="LOCAL-00001" summary="01.02.23: Day1">
       <created>1675269815257</created>
@@ -278,7 +281,28 @@
       <option name="project" value="LOCAL" />
       <updated>1675851884020</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="08.02.23: Day6">
+      <created>1675852031412</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1675852031412</updated>
+    </task>
+    <task id="LOCAL-00027" summary="08.02.23: Day6">
+      <created>1675852040298</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1675852040298</updated>
+    </task>
+    <task id="LOCAL-00028" summary="08.02.23: Day6">
+      <created>1675852285084</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1675852285085</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
@@ -293,5 +317,9 @@
     <MESSAGE value="07.02.23: Day5" />
     <MESSAGE value="08.02.23: Day6" />
     <option name="LAST_COMMIT_MESSAGE" value="08.02.23: Day6" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
