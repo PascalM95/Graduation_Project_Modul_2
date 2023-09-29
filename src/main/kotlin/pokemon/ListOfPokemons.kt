@@ -1,4 +1,4 @@
-package Pokemon
+package pokemon
 
 import absorber
 import aquaknarre
@@ -46,7 +46,7 @@ import walzer
 import zauberblatt
 import slam
 
-// Pokémon vom Typ "Pokemon.Normal"
+// Pokémon vom Typ "pokemon.Normal"
 val rattfratz = Normal("Rattfratz", 58, 38, 26, 30, listOf(tackle, biss, ruckzuckhieb, knirscher))
 val evoli = Normal("Evoli", 73, 38, 35, 30, listOf(biss, tackle, bezirzer, sternschauer))
 val wiesor = Normal("Wiesor", 61, 32, 25, 30, listOf(kratzer, slam, tiefschlag, ruckzuckhieb))
@@ -77,7 +77,7 @@ val nidoran = Poison("Nidoran", 67, 39, 29, 30, listOf(kratzer, doppelkick, biss
 val smogon = Poison("Smogon", 64, 44, 62, 30, listOf(tackle, smog, schlammbad, gewissheit))
 
 var listOfPokemon =
-    mutableListOf<Pokemon>(
+    mutableListOf(
         rattfratz, evoli, wiesor, endivie, geckarbor, tuska, glumanda, panflam, fynx, schiggy,
                            plinfa, karnimani, pikachu, elekid, voltobal, rettan, nidoran, smogon
     )

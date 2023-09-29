@@ -1,8 +1,8 @@
-import Pokemon.Pokemon
-import Pokemon.listOfPokemon
+import pokemon.Pokemon
+import pokemon.listOfPokemon
 
 class Player (val name: String, val cpu: Boolean) {
-    var pokemonOfPlayer = mutableListOf<Pokemon>()
+    private var pokemonOfPlayer = mutableListOf<Pokemon>()
 
     fun choosePokemon (): MutableList<Pokemon> {
         Thread.sleep(500)
@@ -18,7 +18,7 @@ class Player (val name: String, val cpu: Boolean) {
             var j = 0
             while (j < 4) {
                 println("\n${this.name}, wähle dein ${j + 1}. Pokémon:")
-                var input = readln().toInt() - 1
+                val input = readln().toInt() - 1
                 pokemonOfPlayer.add(listOfPokemon[input])
                 j++
                 Thread.sleep(200)
@@ -63,7 +63,7 @@ class Player (val name: String, val cpu: Boolean) {
                     i++
                 }
                 try {
-                    var input = readln().toInt()
+                    val input = readln().toInt()
                     println("${pokemons[input-1].name} du bist dran!\n")
                     chosenPokemon = pokemons[input-1]
                     Thread.sleep(800)

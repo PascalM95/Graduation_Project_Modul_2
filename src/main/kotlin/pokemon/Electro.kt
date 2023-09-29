@@ -1,4 +1,4 @@
-package Pokemon
+package pokemon
 
 import Attack
 
@@ -8,6 +8,4 @@ class Electro (name: String,
                def: Int,
                lvl: Int,
                attacks: List<Attack>,
-               type: String = "Elektro"): Pokemon(name, kp, att, def, lvl, attacks, type) {
-
-               }
+               type: String = "Elektro"): Pokemon(name, kp, att, def, lvl, attacks, type)

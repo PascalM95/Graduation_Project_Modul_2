@@ -1,15 +1,15 @@
-package Pokemon
+package pokemon
 import Attack
 import Player
 
 open class Pokemon(
-    val name: String,
-    var kp: Int,
-    var att: Int,
-    var def: Int,
-    var lvl: Int,
-    var attacks : List<Attack>,
-    val type: String) {
+        val name: String,
+        var kp: Int,
+        var att: Int,
+        var def: Int,
+        var lvl: Int,
+        private var attacks : List<Attack>,
+        val type: String) {
 
     fun chooseAttack (player: Player): Attack {
         var chosenAttack: Attack? = null
@@ -26,7 +26,7 @@ open class Pokemon(
                     i++
                 }
                 try {
-                    var input = readln().toInt()
+                    val input = readln().toInt()
                     println("${this.name} setzt ${attacks[input-1].name} ein.\n")
                     chosenAttack = attacks[input-1]
                     Thread.sleep(500)

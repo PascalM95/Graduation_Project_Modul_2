@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11a08e24-e9f3-4549-a4f5-b6702cb316ce" name="Changes" comment="10.02.23">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Damage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Damage.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Functions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ListOfAttacks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ListOfAttacks.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Pokemon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Pokemon.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Electro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pokemon/Electro.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Fire.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pokemon/Fire.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon/ListOfPokemons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pokemon/ListOfPokemons.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Normal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pokemon/Normal.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Plant.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pokemon/Plant.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Poison.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pokemon/Poison.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Pokemon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pokemon/Pokemon.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Pokemon/Water.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pokemon/Water.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,29 +53,33 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2L2TNhlztyx1carVhoEE3IyN65K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pascalmonch/Desktop/IntelliJ/Graduation_Project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/Pokemon" />
@@ -119,7 +133,10 @@
       <workItem from="1675858254870" duration="1892000" />
       <workItem from="1675867725017" duration="927000" />
       <workItem from="1675930464327" duration="2032000" />
-      <workItem from="1676020672522" duration="2539000" />
+      <workItem from="1676020672522" duration="5876000" />
+      <workItem from="1695975850350" duration="2031000" />
+      <workItem from="1695978804107" duration="6360000" />
+      <workItem from="1695985223376" duration="472000" />
     </task>
     <task id="LOCAL-00001" summary="01.02.23: Day1">
       <created>1675269815257</created>
@@ -324,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676020978741</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="10.02.23">
+      <created>1676028402275</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1676028402275</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>

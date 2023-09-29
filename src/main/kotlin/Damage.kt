@@ -1,8 +1,8 @@
-import Pokemon.Pokemon
-import kotlin.math.roundToInt
+import pokemon.Pokemon
+import kotlin.math.*
 
 fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
-    var z = 100 - ((0..15).random().toDouble())
+    val z = 100 - ((0..15).random().toDouble())
     var damage = ((pokemon1.lvl * 0.4 + 2.0) * attack.damage.toDouble() * (pokemon1.kp.toDouble() / (50.0 * pokemon2.def.toDouble())) + 2.0) * volltreffer() * (z / 100.0)
 
     if (attack.type == "Pflanze" && (pokemon2.type == "Pflanze" || pokemon2.type == "Wasser" || pokemon2.type == "Elektro")) {
@@ -65,7 +65,7 @@ fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
         println("❄️❄️❄️ Das war nicht sehr effektiv! ❄️❄️❄️\n")
         Thread.sleep(500)
     }
-    if (attack.type == "Geist" && pokemon2.type == "Pokemon.Normal") {
+    if (attack.type == "Geist" && pokemon2.type == "pokemon.Normal") {
         damage *= 0
         println("Diese Attacke ist wirkungslos!\n")
         Thread.sleep(500)
@@ -85,7 +85,7 @@ fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
         println("Diese Attacke ist wirkungslos!\n")
         Thread.sleep(500)
     }
-    if (attack.type == "Stahl" && (pokemon2.type == "Pokemon.Normal" || pokemon2.type == "Pflanze")) {
+    if (attack.type == "Stahl" && (pokemon2.type == "pokemon.Normal" || pokemon2.type == "Pflanze")) {
         damage *= 0.5
         println("⚓️ Das war nicht sehr effektiv! ⚓️\n")
         Thread.sleep(500)
@@ -95,7 +95,7 @@ fun damage (pokemon1: Pokemon, pokemon2: Pokemon, attack: Attack): Int {
         println("⚓️⚓️⚓️ Das war sehr effektiv! ⚓️⚓️⚓️\n")
         Thread.sleep(500)
     }
-    if (attack.type == "Gestein" && (pokemon2.type == "Pokemon.Normal" || pokemon2.type == "Feuer")) {
+    if (attack.type == "Gestein" && (pokemon2.type == "pokemon.Normal" || pokemon2.type == "Feuer")) {
         damage *= 0.5
         println("🪨 Das war nicht sehr effektiv! 🪨\n")
         Thread.sleep(500)
